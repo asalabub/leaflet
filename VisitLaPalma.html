@@ -4349,39 +4349,8 @@ summary {
 </div>
 
 
-<pre class="r"><code>library(leaflet)</code></pre>
-<pre><code>## Warning: package &#39;leaflet&#39; was built under R version 4.0.2</code></pre>
-<pre class="r"><code>library(dplyr)
-
-icons &lt;- makeIcon(
-       iconUrl = c(&quot;https://cdn1.iconfinder.com/data/icons/real-estate-94/200/810-512.png&quot;,
-                   &quot;https://static.thenounproject.com/png/5841-200.png&quot;,
-                   &quot;https://cdn0.iconfinder.com/data/icons/travel-37/94/mountain-512.png&quot;,
-                   &quot;https://static.thenounproject.com/png/200363-200.png&quot;,
-                   &quot;https://static.thenounproject.com/png/264522-200.png&quot;,
-                   &quot;https://cdn3.iconfinder.com/data/icons/map/500/landmark-512.png&quot;),
-       iconWidth = 50*255/230, iconHeight = 51,
-       iconAnchorX = 50*255/230/2, iconAnchorY = 16)
-
-laPalma &lt;- data.frame(llocs = c(&quot;Charco Azul&quot;, &quot;Santa Cruz&quot;,
-                                &quot;El Roque de los Muchachos&quot;, 
-                                &quot;Cueva de Las Palomas&quot;, 
-                                &quot;Bosque de Los Tilos&quot;,
-                                &quot;Mirador de el Time&quot;),
-                      lat = c(28.8082366, 28.6832582, 28.7547215, 28.6012378,
-                      28.7900072, 28.6635083),
-                      lng = c(-17.7616973, -17.7696399, -17.8937547, -17.8927678,
-                              -17.8373524, -17.9446609))
-
-
-laPalma %&gt;%
-       leaflet() %&gt;%
-       addTiles() %&gt;%
-       addMarkers(icon = icons,
-                  popup = laPalma$llocs,
-                  clusterOptions = markerClusterOptions())</code></pre>
-<div id="htmlwidget-a6e2d8649d7ca32e5234" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a6e2d8649d7ca32e5234">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[28.8082366,28.6832582,28.7547215,28.6012378,28.7900072,28.6635083],[-17.7616973,-17.7696399,-17.8937547,-17.8927678,-17.8373524,-17.9446609],{"iconUrl":{"data":["https://cdn1.iconfinder.com/data/icons/real-estate-94/200/810-512.png","https://static.thenounproject.com/png/5841-200.png","https://cdn0.iconfinder.com/data/icons/travel-37/94/mountain-512.png","https://static.thenounproject.com/png/200363-200.png","https://static.thenounproject.com/png/264522-200.png","https://cdn3.iconfinder.com/data/icons/map/500/landmark-512.png"],"index":[0,1,2,3,4,5]},"iconWidth":55.4347826086956,"iconHeight":51,"iconAnchorX":27.7173913043478,"iconAnchorY":16},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Charco Azul","Santa Cruz","El Roque de los Muchachos","Cueva de Las Palomas","Bosque de Los Tilos","Mirador de el Time"],null,{"showCoverageOnHover":true,"zoomToBoundsOnClick":true,"spiderfyOnMaxZoom":true,"removeOutsideVisibleBounds":true,"spiderLegPolylineOptions":{"weight":1.5,"color":"#222","opacity":0.5},"freezeAtZoom":false},null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[28.6012378,28.8082366],"lng":[-17.9446609,-17.7616973]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-0ce3766b49c37b0f5a83" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0ce3766b49c37b0f5a83">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[28.8082366,28.6832582,28.7547215,28.6012378,28.7900072,28.6635083],[-17.7616973,-17.7696399,-17.8937547,-17.8927678,-17.8373524,-17.9446609],{"iconUrl":{"data":["https://cdn1.iconfinder.com/data/icons/real-estate-94/200/810-512.png","https://static.thenounproject.com/png/5841-200.png","https://cdn0.iconfinder.com/data/icons/travel-37/94/mountain-512.png","https://static.thenounproject.com/png/200363-200.png","https://static.thenounproject.com/png/264522-200.png","https://cdn3.iconfinder.com/data/icons/map/500/landmark-512.png"],"index":[0,1,2,3,4,5]},"iconWidth":55.4347826086956,"iconHeight":51,"iconAnchorX":27.7173913043478,"iconAnchorY":16},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Charco Azul","Santa Cruz","El Roque de los Muchachos","Cueva de Las Palomas","Bosque de Los Tilos","Mirador de el Time"],null,{"showCoverageOnHover":true,"zoomToBoundsOnClick":true,"spiderfyOnMaxZoom":true,"removeOutsideVisibleBounds":true,"spiderLegPolylineOptions":{"weight":1.5,"color":"#222","opacity":0.5},"freezeAtZoom":false},null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[28.6012378,28.8082366],"lng":[-17.9446609,-17.7616973]}},"evals":[],"jsHooks":[]}</script>
 
 
 

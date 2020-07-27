@@ -1,16 +1,16 @@
 ---
 title: "Visiting La Palma"
-author: "Someone"
+author: "Anna"
 date: "27/7/2020"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-```{r code, message=FALSE}
+```{r code, message=FALSE, warning = FALSE}
 library(leaflet)
 library(dplyr)
 
