@@ -9,6 +9,14 @@ output: html_document
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+Some of the places I am planning to go to during my visit to La Palma. 
+
+- El Charco Azul - natural pool by the sea 
+- Santa Cruz de La Palma - capital of the island 
+- El Roque de los Muchachos - highest mountain of the island.
+- Cueva de Las Palomas - volcanic cave 
+- Bosque de Los Tilos - amazing forest 
+- Mirador de 'El Time' - incredible viewpoint
 
 ```{r code, message=FALSE, warning = FALSE}
 library(leaflet)
