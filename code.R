@@ -2,21 +2,30 @@
 library(leaflet)
 library(dplyr)
 
+icons <- makeIcon(
+       iconUrl = c("https://cdn1.iconfinder.com/data/icons/real-estate-94/200/810-512.png",
+                   "https://static.thenounproject.com/png/5841-200.png",
+                   "https://cdn0.iconfinder.com/data/icons/travel-37/94/mountain-512.png",
+                   "https://static.thenounproject.com/png/200363-200.png",
+                   "https://static.thenounproject.com/png/264522-200.png",
+                   "https://cdn3.iconfinder.com/data/icons/map/500/landmark-512.png"),
+       iconWidth = 50*255/230, iconHeight = 51,
+       iconAnchorX = 50*255/230/2, iconAnchorY = 16)
+
 laPalma <- data.frame(llocs = c("Charco Azul", "Santa Cruz",
                                 "El Roque de los Muchachos", 
                                 "Cueva de Las Palomas", 
                                 "Bosque de Los Tilos",
                                 "Mirador de el Time"),
-                      lat = c(28.8082366, 28.6870224, 28.7547215, 28.6012378,
+                      lat = c(28.8082366, 28.6832582, 28.7547215, 28.6012378,
                       28.7900072, 28.6635083),
-                      lng = c(-17.7616973, -17.7902822, -17.8937547, -17.8927678,
+                      lng = c(-17.7616973, -17.7696399, -17.8937547, -17.8927678,
                               -17.8373524, -17.9446609))
+
 
 laPalma %>%
        leaflet() %>%
        addTiles() %>%
-       addMarkers(popup = llocs,
+       addMarkers(icon = icons,
+                  popup = laPalma$llocs,
                   clusterOptions = markerClusterOptions())
-
-https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbWVT1dwYTpdVD5zOcl0xjK_rqdEPgHgqTxA&usqp=CAU
-https://image.flaticon.com/icons/png/512/1364/1364596.png
