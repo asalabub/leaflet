@@ -1,0 +1,29 @@
+---
+title: "Plotly"
+author: "My name here"
+date: "29/7/2020"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown and Plotly
+
+This is my presentation for the third week of the Coursera course on Developing data products.
+
+
+## The relationship between Weight, Horsepower and cylinders.
+
+```{r cars, echo = FALSE, message = FALSE, warning=FALSE}
+library(plotly)
+plot_ly(x = mtcars$wt, y = mtcars$hp, color = factor(mtcars$cyl))
+```
+
+## A different way to visualize this relationship
+
+```{r pressure, echo = FALSE}
+plot_ly(mtcars, x = ~wt, y = ~hp, z = ~cyl, color = ~cyl, type = "scatter3d")
+```
+
